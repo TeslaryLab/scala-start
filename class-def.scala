@@ -80,4 +80,12 @@ class Character(override val name:String) extends Person(name) with Nice
 val flanders = new Character("Ned")
 flanders.greet
 
-// case class
+// case class 样本类
+case class Demo(name: String)
+"""
+初始化的时候可以不加 new
+默认提供了 equals hashcode Serializable
+自动从 scala.Product 中继承一些函数
+case class 构造函数的参数是 public 级别的
+支持模式匹配
+"""
